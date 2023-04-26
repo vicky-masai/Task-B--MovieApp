@@ -7,7 +7,7 @@ function Search() {
     async function handleSearch() {
       let search = searchQuery ? searchQuery : "Doctor";
       const response = await fetch(
-        `https://www.omdbapi.com/?i=tt3896198&apikey=a9eb25f6&s=${search}`
+        `${process.env.REACT_APP_API}&s=${search}`
       );
       const data = await response.json();
       setSearchResults(data.Search || []);
