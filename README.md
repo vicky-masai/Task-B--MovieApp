@@ -46,3 +46,7 @@ Save the .env file and restart the development server by running npm start or ya
 ## Testing 
 
 For the testing the app you have to run this command npm test | yarn test
+
+## Development
+
+I have used vercel to deploy this application.
