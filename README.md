@@ -1,70 +1,48 @@
-# Getting Started with Create React App
+# Movie Search application
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This application allows users to search for movies by title using an external movie API.
 
-## Available Scripts
+## Setting up
 
-In the project directory, you can run:
+Clone the repository or download the source code from the GitHub repository.
+Navigate to the root directory of the project in the terminal.
+## Run npm install or yarn install to install the project dependencies.
 
-### `npm start`
+Install this node using npm install | yarn install
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Run npm start or yarn start to start the development server.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Note - before running the application you have to add your api in .env file.
 
-### `npm test`
+- To run the application on local system, run this command npm start | yarn start
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Using the Application
+In the search bar at the top of the page, type in the name of a movie you would like to search for and press enter.
 
-### `npm run build`
+The search results will be displayed in the grid card format, each card contains the title, year of release, and poster of the movie.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+If there are no search results, a message will be displayed to indicate that no movies were found.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Obtaining and Using an API key
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+The movie search application uses an external movie API to fetch movie information. In order to use this API, you will need to obtain an API key from the provider's website.
 
-### `npm run eject`
+Go to the website of the chosen movie API provider => https://www.omdbapi.com/
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Register for an account, if necessary.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Follow the instructions provided by the provider to obtain an API key.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Once you have obtained your API key.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## create a .env file in the root directory of the project.
 
-## Learn More
+In the .env file, add the following line: REACT_APP_API=your_api.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Replace your_api with the API you obtained from the provider on your mail.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Save the .env file and restart the development server by running npm start or yarn start.
 
-### Code Splitting
+## Testing 
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+For the testing the app you have to run this command npm test | yarn test
